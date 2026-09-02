@@ -1,6 +1,11 @@
-num1 = input("Enter a number: ")
+num = input("Enter a number: ")
 
-modulo = num1 % 2
+modulo = int(num) % 2
 
-print(f"{modulo}")
+if modulo == 0:
+    print("Number is even.")
+else:
+    print("Number is odd.")
+
+
 

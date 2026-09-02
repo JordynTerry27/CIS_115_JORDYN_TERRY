@@ -1,5 +1,5 @@
 m = 10
-a = 9.81 ** 2
+a = 9.81 
 
 force = m * a
-print(f"{force}")
+print(f"{force} N")
