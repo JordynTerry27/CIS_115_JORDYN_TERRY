@@ -1,4 +1,4 @@
 myVar = "Do or do not, there is no try"
 
 for x in myVar:
-    print(myVar)
+    print(x)
