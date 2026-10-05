@@ -8,4 +8,4 @@ def max(num1,num2):
 
 highest_num = max(num1,num2)
 return
-print(f"The highest number is {highest_num}
+print(f"The highest number is {highest_num}")
