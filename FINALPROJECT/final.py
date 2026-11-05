@@ -14,8 +14,10 @@ print(" " * 17 + "PRODUCT CATALOG")
 print(hyphens)
 
 for prod_item in prod_catalog:
-    length = prod_item(len("Abbreviation")) - spaces
-    print(prod_item["Abbreviation"] + length + spaces + "|" + prod_item["Price"])
+      length = len("Abbreviation") - len(spaces)
+      full_length = length * " "
+      print(prod_item["Abbreviation"] + full_length + spaces + "|" + prod_item["Price"])
+      print(len(prod_catalog["Abbreviation"]))
 
 
   
