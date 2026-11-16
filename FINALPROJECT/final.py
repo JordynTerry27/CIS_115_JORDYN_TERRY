@@ -6,18 +6,19 @@ prod_catalog = [
     {"Product ID":"5", "SKU":"smt_tv_100","Price":"$359.00", "Description":"TCL Smart TV.", "Qty on Hand":"225", "Abbreviation": "Smart TV(TCL 70 inch)"}
 ]
 
-hyphens = "-" * 50
-spaces = " " * 20
-bars = "|"
+hyphens = "-" * 70
+
 print(hyphens)
-print(" " * 17 + "PRODUCT CATALOG")
+print(" " * 25 + "PRODUCT CATALOG")
 print(hyphens)
 
 for prod_item in prod_catalog:
-      length = len("Abbreviation") - len(spaces)
-      full_length = length * " "
-      print(prod_item["Abbreviation"] + full_length + spaces + "|" + prod_item["Price"])
-      print(len(prod_catalog["Abbreviation"]))
+      length = len(prod_item["Abbreviation"])
+      full_length = (35 - length) * " "
+      print(prod_item["Product ID"] + "  |   " + prod_item["Abbreviation"] + full_length + "|  " + prod_item["Price"]) 
+print(hyphens)
+      
+  
 
 
   
